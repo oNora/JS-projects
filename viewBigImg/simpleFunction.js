@@ -2,7 +2,9 @@
 
 window.onload = function(){
 	var linkElements = document.getElementsByTagName("a");
-	for (var i = 0, length = linkElements.length; i < length; $i++) {
+	console.log(linkElements);
+	console.log(linkElements.length);
+	for (var i = 0; i < linkElements.length; i++) {
 		linkElements[i].onclick = function(e) {
 			window.open(
 				this.href,
