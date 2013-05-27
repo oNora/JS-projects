@@ -2,8 +2,6 @@
 
 window.onload = function(){
 	var linkElements = document.getElementsByTagName("a");
-	console.log(linkElements);
-	console.log(linkElements.length);
 	for (var i = 0; i < linkElements.length; i++) {
 		linkElements[i].onclick = function(e) {
 			window.open(
