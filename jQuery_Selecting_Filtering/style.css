@@ -1,0 +1,28 @@
+body {
+	font: 16px sans-serif;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 200px;
+}
+li {
+	padding: 3px;
+	margin: 3px;
+}
+div.tmpList {
+	float: left;
+	margin: 0 20px;
+}
+div#tmpRecap {
+	clear: left;
+	padding: 10px;
+}
+.tmpExample {
+	border: 1px solid rgb(200, 200, 200);
+	background: #cbe5f8;
+}
+div#tmpSelection {
+	overflow: hidden;
+}
