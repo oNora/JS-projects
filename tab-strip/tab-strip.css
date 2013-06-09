@@ -1,0 +1,107 @@
+*{
+	margin:0px;
+	padding: 0px; 
+}
+body{
+	font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+	font-size: 16px;
+}
+#wrapper{
+	width: 960px;
+	
+}
+.tab-strip{
+	width:323px;
+	height:250px;
+	margin: 15px;
+	border: 1px solid #000000;
+}
+.tab-strip >li{
+	list-style-type: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+	
+}
+li div{
+	display: none;
+}
+.tab-strip > li{
+	display: inline-block;
+	position: relative;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	font-size: 1.6em;
+	padding: 4px 8px;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebebeb 0%, #adadad 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#adadad)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ebebeb 0%,#adadad 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ebebeb 0%,#adadad 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ebebeb 0%,#adadad 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ebebeb 0%,#adadad 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#adadad',GradientType=0 ); /* IE6-9 */
+
+}
+ul.tab-strip >li:hover{
+	
+	background: #EEEEEE;
+}
+ul.tab-strip li.current{
+	border: none;
+	background: #FFF;
+}
+ul.tab-strip li.current a{
+	font-weight: bold;
+}
+.current div{
+	margin-top: 10x;
+	display: block;
+	position: absolute;
+}
+.tab-content {
+	font-size: 15px;
+	float: left;
+	width: 305px;
+	margin-top: 15px;
+}
+.tab-content ul{
+	margin-left: 15px;
+	list-style-type: disc;
+}
+.tab-content ul li{
+	list-style-type: disc;
+	margin-top: 5px;
+}
+.tab-content ul li ul li{
+	list-style-type: lower-alpha;
+}
+
+.tab-content table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+.tab-content table tr td, .tab-content table tr th  {
+	border: 1px solid #000000;
+	padding: 5px;
+}
+.tab-content table thead{
+	background: #adadad; /* Old browsers */
+	background: -moz-linear-gradient(top,  #adadad 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#adadad), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #adadad 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #adadad 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #adadad 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #adadad 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adadad', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+}
+.tab-content table{
+	margin-left: -40px;
+	margin-top: 10px;
+}
+.current div:nth-child(3){
+	background: red;
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>if the first one is greater than the second one</title>
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<style>
+		a {
+			color: black;
+			border: 1px solid black;
+			padding: 5px 15px;
+			text-decoration: none;
+			display: inline-block;
+			margin: 15px 0;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+		#console{
+			font-family: Alef, sans-serif;
+			width: 500px;
+			height: 500px;
+			background-color: #000;
+			color: #fff;
+			padding: 5px;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-first">First: </label>
+	<input type="text" id="tb-first" />
+	<br />
+	<label for="tb-second">Second: </label>
+	<input type="text" id="tb-second" />
+	<br />
+	<a href="#" onclick="findBigger()">Find bigger</a>
+	<div id="console">
+	</div>
+	<script>
+		//Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.
+		function findBigger() {
+			var first = $("#tb-first").val();
+			// console.log(first);
+			var second = $("#tb-second").val();
+			// console.log(second);
+			var oldValue = 0;
+			 if(first>second) {
+			 	oldValue =first;
+			 	first=second;
+			 	second= oldValue;
+			 	$('#console').append("before exchange: first=" +second+"; second ="+first+". After that: first= "+first+ "; second = "+second);
+			 }
+			 else {
+			 	$('#console').append("First is not bigger than second");	
+			 }
+		}
+	</script>
+</body>
+</html>

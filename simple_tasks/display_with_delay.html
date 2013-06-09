@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Display input value after submit click and 5 sec delay</title>
+		<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<style>
+			label {display:block; font-weight:bold;}
+			.resut{display:none;}
+			.loading {
+			background: -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* IE10+ */
+			background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#66ffffff',GradientType=0 ); /* IE6-9 */
+			}
+	</style>
+	</head>
+	<body>
+		<form action="answer1.html" method="post" class="selfsubmitdelay" onsubmit="return false;">
+			<p>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" value=""/>
+			</p>
+			<p>
+				<label for="token">Token</label>
+				<input type="text" id="token" name="token" value="" />
+			</p>
+			<p>
+				<label for="brand">Brand</label>
+				<input type="text" id="brand" name="brand" value=""/>
+			</p>
+			<p>
+				<label>Is it Demo</label>
+				<input type="radio" name="isDemo" value="yes"/> Yes<br/>
+				<input type="radio" name="isDemo" value="no"/> No
+			</p>
+			<input type="submit" name="send_form"/>
+		</form>
+		<div class="resut">
+			<p class="username"></p>
+			<p class="token"></p>
+			<p class="brand"></p>
+			<p class="isDemo"></p>
+		</div>
+		<div class="loading"></div>
+	<script>
+		//Write a script with 3 inputs and 2 radio buttons in form with submit button. First input is a text, second input is a Float number and third is a integer. Take the form's data and display it after 5 second.
+		$(document).ready(function(){
+			$('form').submit(function() {
+				var inputUsername = $('#username').val();
+				var inputToken = $('#token').val();
+				inputToken = parseInt(inputToken).toFixed(2);
+
+
+				var inputBrand = $('#brand').val();
+				var selectedVal = "none";
+				var selected = $("input[type='radio']:checked");
+				if (selected.length > 0) {
+				    selectedVal = selected.val();
+				}
+				var valueInputArry = [];
+				valueInputArry.push(inputUsername, inputToken, inputBrand, selectedVal);
+				console.log(valueInputArry);
+
+				setTimeout(function() {
+      				var result = "<div id='result'>";
+					var arrayLength = valueInputArry.length;
+					for (var counter = 0; counter<arrayLength; counter++) {
+						result += '<p>'+valueInputArry[counter]+'</p>';
+					};
+
+					result += "</div>";
+
+					$("body").append(result);
+				}, 5000);
+				
+			})
+		});
+	</script>
+	</body>
+</html>

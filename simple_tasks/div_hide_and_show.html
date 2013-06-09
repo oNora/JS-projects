@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>task2</title>
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+</head>
+<body>
+	<form action="answer1.html" method="post" class="selfsubmitdelay" onsubmit="return false;">
+		<div>
+			<label for="mail">E-mail</label>
+			<input type="email" id="mail" name="mail" value=""/><br />
+			<a href="#" onclick="return false;">Next</a>
+		</div>
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" value="" /><br />
+			<a href="#" onclick="return false;">Next</a>
+		</div>
+		<div class="resut"></div>
+	</form>
+	<script>
+		//Write a script with 3 divs, first two of them have input and next button/link. You can see just one of them in at any time. When clicking "next", display the next div and save the data in localstorage.  Display it in the third div.
+		$(document).ready(function(){
+			$("div").hide();
+			$("div:first").show();
+
+			$("div:first").on("click", "a", function(e){
+				var inputEmail = $("#mail").val();
+				localStorage.setItem("mail", inputEmail);
+				$(this).parent().hide();
+				$(this).parent().next().show();
+			});
+
+			$("div:eq(1)").on("click", "a", function(e){
+				var inputName = $("#name").val();
+				localStorage.setItem("name", inputName);
+				$(this).parent().hide();
+			    $(this).parent().next().show().html("<p>Email: "+localStorage.getItem('mail')+"</p><p>Name: "+localStorage.getItem('name')+"</p>");
+			});
+		});
+	</script>
+</body>
+</html>
