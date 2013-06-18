@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="en-us" />
+		<title></title>
+		<style>
+			div {
+				border: 1px solid rgb(200, 200, 200);
+				width: 100px;
+				height: 100px;
+				margin: 5px;
+				float: left;
+			}
+			div.tmpExampleOver {
+				background: #5092c5;
+			}
+			div.tmpExampleOn {
+				background: #165b91;
+			}	
+		</style>
+		<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<link rel="stylesheet" href="Figure 3-6.css" type="text/css" />
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<script>
+			$(document).bind("ready", function() {
+				$("div").bind("mouseover", function() {
+					$(this).addClass("tmpExampleOver");
+				});
+				$("div").bind("mouseout", function() {
+					$(this).removeClass("tmpExampleOver");
+				});
+				$("div").bind("click", function() {
+					if ($(this).hasClass("tmpExampleOn")) {
+						$(this).removeClass("tmpExampleOn");
+					} 
+					else {
+						$(this).addClass("tmpExampleOn");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
