@@ -1,0 +1,42 @@
+#img_popUp {
+	border-radius: 15px;
+	background:#dee;
+	display:inline;/*IE6*/
+	height: auto;
+	position: fixed;
+	width:auto;
+	z-index:500;
+	padding: 15px 10px 15px 19px;
+}
+#img_popUp {
+	display: none;
+
+}
+.imgDescription {
+	width: 40%;
+	float: left;
+	text-align: justify;
+	margin-right: 5px;
+}
+.imgDiv {
+	width: 300px;
+	cursor: pointer;
+	float: left;
+}
+.imgDiv img {
+	width: 300px;
+}
+#cancelButton {
+	cursor: pointer;
+}
+.imgText, .imgDiv p {
+	text-align: center;
+}
+#cancelButton {
+	float: right;
+	margin-top: -24px;
+	margin-right: -24px;
+	background: #dee;
+	padding: 8px;
+	border-radius: 16px;
+}
