@@ -1,5 +1,3 @@
-//A function to view a picture in a different window and a bigger size
-
 window.onload = function(){
 	var linkElements = document.getElementsByTagName("a");
 	for (var i = 0; i < linkElements.length; i++) {
