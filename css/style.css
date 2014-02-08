@@ -1,0 +1,68 @@
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#toolbar {
+	position: relative;
+	border: 1px solid black;
+	height: 61px;
+	background-color: #DEB887;
+	border-radius: 5px;
+}
+.buttonDiv {
+	width: 49.5%;
+	height: 44px;
+	background-color: #DEB887;
+	float: left;
+	padding-top: 7px;
+	padding-bottom: 10px;
+}
+.buttonDiv:first-of-type {
+	border-right: 1px solid black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.createdDivButton,
+.createdDivText {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.createdDivButton a{
+	margin-top: 80px;
+	display: inline-block;
+	margin-left: 40px;
+	font-size: 25px;
+	cursor: pointer;
+}
+.createdDivText p{
+	margin-top: 80px;
+	display: inline-block;
+	margin-left: 50px;
+	font-size: 25px;
+	cursor: pointer;
+}
+#createButton, #createText {
+	padding: 10px;
+	color: black;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px white;
+	background: #EFE4DC;
+	border: 1px solid black;
+	border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	margin: 5px 10px 0 0;
+	cursor: pointer;
+	margin-left: 43%;
+}
+#createButton:hover, #createText:hover {
+	background:#afaba7;
+	color:white;
+	text-shadow: 1px 1px 0px black;
+	cursor:pointer;
+}
