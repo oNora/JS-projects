@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Display input value after submit click and 5 sec delay</title>
-		<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
 		<style>
 			label {display:block; font-weight:bold;}
 			.resut{display:none;}
@@ -47,7 +47,7 @@
 		</div>
 		<div class="loading"></div>
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function() {
 			$('form').submit(function() {
 				var inputUsername = $('#username').val();
 				var inputToken = $('#token').val();
@@ -67,8 +67,8 @@
 				setTimeout(function() {
       				var result = "<div id='result'>";
 					var arrayLength = valueInputArry.length;
-					for (var counter = 0; counter<arrayLength; counter++) {
-						result += '<p>'+valueInputArry[counter]+'</p>';
+					for (var counter = 0; counter < arrayLength; counter++) {
+						result += '<p>' + valueInputArry[counter] + '</p>';
 					};
 
 					result += "</div>";

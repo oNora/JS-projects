@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>task2</title>
-	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
 </head>
 <body>
 	<form action="answer1.html" method="post" class="selfsubmitdelay" onsubmit="return false;">
@@ -20,22 +20,22 @@
 		<div class="resut"></div>
 	</form>
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function() {
 			$("div").hide();
 			$("div:first").show();
 
-			$("div:first").on("click", "a", function(e){
+			$("div:first").on("click", "a", function(e) {
 				var inputEmail = $("#mail").val();
 				localStorage.setItem("mail", inputEmail);
 				$(this).parent().hide();
 				$(this).parent().next().show();
 			});
 
-			$("div:eq(1)").on("click", "a", function(e){
+			$("div:eq(1)").on("click", "a", function(e) {
 				var inputName = $("#name").val();
 				localStorage.setItem("name", inputName);
 				$(this).parent().hide();
-			    $(this).parent().next().show().html("<p>Email: "+localStorage.getItem('mail')+"</p><p>Name: "+localStorage.getItem('name')+"</p>");
+			    $(this).parent().next().show().html("<p>Email: " + localStorage.getItem('mail') + "</p><p>Name: " + localStorage.getItem('name') + "</p>");
 			});
 		});
 	</script>

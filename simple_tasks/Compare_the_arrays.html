@@ -3,7 +3,7 @@
 <head>
 	<title>Compare two char arrays lexicographically (letter by letter). </title>
 	<link href='http://fonts.googleapis.com/css?family=Alef' rel='stylesheet' type='text/css'>
-	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
 	<style>
 		input{
 			display: inline-block;
@@ -21,10 +21,9 @@
 			display: inline-block;
 			margin: 15px 0;
 		}
-
-			a:hover {
-				text-decoration: underline;
-			}
+		a:hover {
+			text-decoration: underline;
+		}
 		#writeScript{
 			font-family: Alef, sans-serif;
 			width: 500px;
@@ -57,16 +56,16 @@
 		    var arrayTwo = inputTwo.split(', ');
 		    var arraysLenght = arrayOne.length;
 		    
-		    for(var counter=0; counter< arraysLenght; counter++){
-		    	if (arrayOne[counter]>arrayTwo[counter]) {
+		    for (var counter = 0; counter < arraysLenght; counter++) {
+		    	if (arrayOne[counter] > arrayTwo[counter]) {
 
-		            $('#writeScript').append("<p>"+ arrayOne[counter] + " is after " + arrayTwo[counter] + " lexicographyclly!</p>");
+		            $('#writeScript').append("<p>" + arrayOne[counter] + " is after " + arrayTwo[counter] + " lexicographyclly!</p>");
 		        }
-		        else if(arrayOne[counter]==arrayTwo[counter]){
-		        	$('#writeScript').append("<p>"+ arrayOne[counter] + " is the same as " + arrayTwo[counter] + " lexicographyclly!</p>");
+		        else if (arrayOne[counter] == arrayTwo[counter]) {
+		        	$('#writeScript').append("<p>" + arrayOne[counter] + " is the same as " + arrayTwo[counter] + " lexicographyclly!</p>");
 		        }
 		        else {
-		            $('#writeScript').append("<p>"+ arrayOne[counter] + " is before " + arrayTwo[counter] + " lexicographyclly!</p>");
+		            $('#writeScript').append("<p>" + arrayOne[counter] + " is before " + arrayTwo[counter] + " lexicographyclly!</p>");
 		        }
 		    }
 		}	
