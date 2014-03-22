@@ -11,17 +11,18 @@ var Toolbar = function () {
 	}
 
 	this.render = function () {
-		var toolbarElement = '<div id="toolbar">' 
-							+ '<div class="buttonDiv"><button type="button" id="createButton">Create Button</button></div>'
-							+ '<div class="buttonDiv"><button type="button" id="createText">Create Text</button></div>'
-							+ '</div>';
+		var toolbarElement = '<div id="toolbar"><div class="buttonDiv">\
+							<button type="button" id="createButton">Create \
+							Button</button></div><div class="buttonDiv">\
+							<button type="button" id="createText">Create \
+							Text</button></div></div>';
 
 		$('.wrapper').append(toolbarElement);
 		$('#toolbar').draggable({'zIndex': 5000});
 		init();
 
 		colorpicker('#3cff3c');
-	}
+	};
 
 	function createButton () {
 		createButtonElement.render();
@@ -30,7 +31,7 @@ var Toolbar = function () {
 	function createText () {
 		createTextElement.render();
 	}
-}
+};
 
 var myTop = 40,
 	myLeft = 30,
@@ -38,6 +39,13 @@ var myTop = 40,
 
 var createElement = function (bgColor, elementName) {
 	var currentBackground = bgColor;
+
+	var buttonTemplate = '<div class="createdDivButton" id="{{idButtonDiv}}"\
+						data-buttonInfo="{{elementName}}" \
+						style="z-index:1;left: {{leftPosition}}px; \
+						top: {{topPosition}}px; background-color:\
+						{{currentBackground}};"><a href = "#"> \
+						It\'s a  {{elementName}} </a></div>';
 
 	this.render = function () {
 		myDivs++;
@@ -48,13 +56,20 @@ var createElement = function (bgColor, elementName) {
 			myTop=100;
 			myLeft=20;
 		}
-		var divButton = '<div class="createdDivButton" id="button' + myDivs
-						+ '" data-buttonInfo="' + elementName + '" style="z-index: ' + myDivs 
-						+ '; left:' + myLeft + 'px; top:' + myTop + 'px; background-color: ' + currentBackground + '">'
-						+ '<a href = "#"> It\'s a ' + elementName + '</a></div>';
-		$('.wrapper').append(divButton);
+
+		var buttonData = {
+			"idButtonDiv": 'button' + myDivs,
+			"elementName": elementName,
+			"topPosition":myTop,
+			"leftPosition":myLeft,
+			"currentBackground": currentBackground
+		};
+		var template = Handlebars.compile(buttonTemplate);
+		var result = template(buttonData);
+		$('.wrapper').append(result);
+
 		$('.createdDivButton').draggable({'zIndex': 5000});
-	}
+	};
 
 
 	this.getBackground = function (id) {
@@ -62,15 +77,15 @@ var createElement = function (bgColor, elementName) {
 		var hexcolor = rgb2hex(elementBackgroundColor);
 		$('#picker').spectrum('set', hexcolor);
 		selectBackgroundColor(id);
-	}
+	};
 
 	this.setBackground = function (elementid) {
 		var newBackgroundColor = $('.sp-input').val();
 		$("#picker").spectrum("hide");
 		$('#' + elementid).css('background-color', newBackgroundColor);
 		currentBackground = newBackgroundColor;
-	}
-}
+	};
+};
 
 var createButtonElement = new createElement('#3cff3c', 'button');
 var createTextElement = new createElement('#ffff3c', 'text');
@@ -83,7 +98,7 @@ function colorpicker (background) {
 }
 
 function rgb2hex (rgb) {
-	var hexDigits = '0123456789abcdef'
+	var hexDigits = '0123456789abcdef';
 	rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
 	function hex(x) {
 		return isNaN(x) ? '00' : hexDigits[(x - x % 16) / 16] + hexDigits[x % 16];
@@ -107,10 +122,10 @@ function selectBackgroundColor(elId) {
 
 
 $(document).ready(function () {
-	var t = new Toolbar;
+	var t = new Toolbar();
 	t.render();
 	
-	$(document).on('dblclick', '.createdDivButton, .createdDivText', function () {
+	$(document).on('dblclick', '.createdDivButton, .createdDivText', function() {
 		$("#picker").spectrum("show");
 
 		var clickedElementId = $(this).attr('id');
