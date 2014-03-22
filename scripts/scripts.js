@@ -46,7 +46,8 @@ var createElement = function (bgColor, elementName) {
 						top: {{topPosition}}px; background-color:\
 						{{currentBackground}};"><a href = "#"> \
 						It\'s a  {{elementName}} </a></div>';
-
+	var template = Handlebars.compile(buttonTemplate);
+					
 	this.render = function () {
 		myDivs++;
 		myTop += 30;
@@ -64,7 +65,6 @@ var createElement = function (bgColor, elementName) {
 			"leftPosition":myLeft,
 			"currentBackground": currentBackground
 		};
-		var template = Handlebars.compile(buttonTemplate);
 		var result = template(buttonData);
 		$('.wrapper').append(result);
 
