@@ -12,19 +12,19 @@ $(function() {
 		$('#languages').append(optionsElement);
 	});
 
-	$.validator.addMethod("email", function(value, element) {
+	$.validator.addMethod('email', function(value, element) {
 		return this.optional(element) ||
 				/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/i.test(value);
 	});
-	$.validator.addMethod("fullname", function(value, element) {
+	$.validator.addMethod('fullname', function(value, element) {
 		return this.optional(element) ||
 				/^[a-zA-Z\s][a-zA-Z\s]{0,24}$/i.test(value);
-	}, "Your name can contain only letters");
+	}, 'Your name can contain only letters');
 
-	$("#ajax-contact").validate({
+	$('#ajax-contact').validate({
 		rules: {
-			email: "required email",
-			fullname: "required fullname",
+			email: 'required email',
+			fullname: 'required fullname',
 			subject: {
 				minlength: 3,
 				required: true
@@ -35,9 +35,9 @@ $(function() {
 		},
 		messages: {
 			email: {
-				required: "We need your email address to contact you",
-				email: "Your email address must be in the format of name@domain\
-						.com"
+				required: 'We need your email address to contact you',
+				email: 'Your email address must be in the format of name@domain\
+						.com'
 			}
 		}
 	});
@@ -50,7 +50,7 @@ $(function() {
 		e.preventDefault();
 
 		var formData = $(form).serialize();
-		$.post( "mailer.php", formData )
+		$.post( 'mailer.php', formData )
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
