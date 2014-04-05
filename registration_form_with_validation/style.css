@@ -1,0 +1,68 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	padding: 10px;
+}
+#page-wrapper {
+	display: inline-block;
+	width: 410px;
+	padding: 10px;
+	border-radius: 5px;
+	background: #000;
+	font-size: 17px;
+}
+label{
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+}
+.errorRow{
+	color: #fca000;
+}
+.field{
+	margin-bottom: 18px;
+}
+.field:last-of-type{
+	margin-bottom: 8px;
+}
+input {
+	display: inline-block;
+	width: 380px;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+.errorRow input{
+	background: url('img/cancel-circle.png') no-repeat 98% center #fff;
+}
+.errorRow.age{
+	background: url('img/cancel-circle.png') no-repeat 96% 31px;
+}
+.correctRow input{
+	background: url('img/checkmark-circle.png') no-repeat 98% center #fff;
+}
+.correctRow.age{
+	background: url('img/checkmark-circle.png') no-repeat 96% 31px;
+}
+select {
+	display: inline-block;
+	width: 100px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 20px;
+	outline: none;
+}
+button {
+	background: #fca000;
+	border: 2px solid #fca000;
+	border-style: outset;
+	display: inline-block;
+	width: 404px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+}
