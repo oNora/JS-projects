@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact us demo</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page-wrapper">
+	  <h1>Contact us</h1>
+
+	  <div id="form-post-messages"></div>
+		
+		<form id="ajax-contact" method="post" action="mailer.php">
+			<div class="field">
+				<label for="fullname">Name:</label>
+				<input type="text" id="fullname" name="fullname" >
+			</div>
+
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" >
+			</div>
+
+			<div class="field">
+				<label for="email">Subject:</label>
+				<input type="text" id="subject" name="subject" list="languages" >
+				<datalist id="languages">
+				</datalist>
+			</div>
+
+			<div class="field">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" ></textarea>
+			</div>
+
+			<div class="field">
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="../thirdparty/jquery-2.1.0.min.js"></script>
+	<script src="../thirdparty/jquery.validate.min.js"></script>
+	<script src="../thirdparty/additional-methods.min.js"></script>
+	<script src="script/app.js"></script>
+</body>
+</html>
