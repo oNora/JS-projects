@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	setDateinfo();
 
-	$.validator.addMethod("email", function(value, element) {
+	$.validator.addMethod('email', function(value, element) {
 		return this.optional(element) ||
 		/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/i.test(value);
 	});
-	$.validator.addMethod("check_date_of_birth", function(value, element) {
+	$.validator.addMethod('check_date_of_birth', function(value, element) {
 		
 		// transforms months from strings to numbers
 		var parsMonths = {
@@ -22,9 +22,9 @@ $(document).ready(function() {
 			November: 11,
 			December: 12
 		},
-			day = $("#dob_day").val();
-			month = $("#dob_month").val();
-			year = $("#dob_year").val();
+			day = $('#dob_day').val();
+			month = $('#dob_month').val();
+			year = $('#dob_year').val();
 			age =  18;
 
 		var	mydate = new Date();
@@ -34,11 +34,11 @@ $(document).ready(function() {
 		currdate.setFullYear(currdate.getFullYear() - age);
 		return currdate > mydate;
 
-	}, "You must be at least 18 years of age.");
+	}, 'You must be at least 18 years of age.');
 
-	$("#ajax-contact").validate({
+	$('#ajax-contact').validate({
 		rules: {
-			email: "required email",
+			email: 'required email',
 			fname: {
 				minlength: 2,
 				required: true
@@ -58,7 +58,7 @@ $(document).ready(function() {
 			password_confirm : {
 				minlength : 5,
 				required: true,
-				equalTo : "#password"
+				equalTo : '#password'
 			},
 			dob_day: {
 				check_date_of_birth: true,
@@ -74,24 +74,24 @@ $(document).ready(function() {
 			}
 		},
 		groups: {
-			DateofBirth: "dob_day dob_month dob_year"
+			DateofBirth: 'dob_day dob_month dob_year'
 		},
 		errorPlacement: function(error, element) {
-			if (element.attr("name") == "dob_day"
-				|| element.attr("name") == "dob_month"
-				|| element.attr("name") == "dob_year") {
-				error.insertAfter("#dob_year");
+			if (element.attr('name') == 'dob_day'
+				|| element.attr('name') == 'dob_month'
+				|| element.attr('name') == 'dob_year') {
+				error.insertAfter('#dob_year');
 			} else {
 				error.insertAfter(element);
 			}
 		},
 			messages: {
-			fname: "Please specify your first name",
-			lname: "Please specify your last name too",
+			fname: 'Please specify your first name',
+			lname: 'Please specify your last name too',
 			email: {
-				required: "We need your email address to contact you",
-				email: "Your email address must be in the format of name@domain\
-						.com"
+				required: 'We need your email address to contact you',
+				email: 'Your email address must be in the format of name@domain\
+						.com'
 			},
 			dob_year: 'These fields are required'
 		},
