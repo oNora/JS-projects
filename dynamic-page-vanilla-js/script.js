@@ -1,4 +1,4 @@
-var clienjs ;
+var clientjs ;
 (function (){
 
 	var hasEventListener = !!document.addEventListener,
@@ -174,7 +174,7 @@ var clienjs ;
 
 	}
 
-	clienjs.init = init;
-})(clienjs || (clienjs = {}));
+	clientjs.init = init;
+})(clientjs || (clientjs = {}));
 
-window.onload = clienjs.init;
+window.onload = clientjs.init;
