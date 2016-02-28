@@ -2,6 +2,7 @@ Description
 ====================================
 
 __Short task that shows how to create draggable elements with color picker.__
+<br />Demo link: http://onora.github.io/draggable_elements_with_color_picker/
 
 Basic requirements:
 
