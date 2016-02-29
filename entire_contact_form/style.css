@@ -16,6 +16,34 @@ body {
 	-webkit-font-smoothing: antialiased;
 	padding: 20px;
 }
+/* GitHub btn */
+.btn-GitHub {
+	position: fixed;
+	top: 3.2em;
+	right: -3.7em;
+	display: block;
+	padding: 4px 0;
+	background: #69c773;
+	box-shadow: 1px 1px 5px 1px #666;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.btn-GitHub a{
+	display: block;
+	padding: .4em 3.5em;
+	color:#000;
+	font-family: Arial;
+	text-align: center;
+	text-decoration: none;
+}
 #page-wrapper{
 	border-top: 5px solid #69c773;
 	border-left: 1px solid #69c773;
