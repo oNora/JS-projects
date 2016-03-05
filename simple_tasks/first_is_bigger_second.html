@@ -25,9 +25,49 @@
 			padding: 5px;
 			overflow: auto;
 		}
+
+		/* GitHub btn */
+		.btn-GitHub {
+			position: fixed;
+			top: 2.9em;
+			right: -3.7em;
+			display: block;
+			padding: 4px 0;
+			background: #000;
+			box-shadow: 1px 1px 5px 1px #666;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+			z-index: 999;
+			float: none;
+			height: auto;
+			width: auto;
+		}
+		.btn-GitHub a {
+			display: block;
+			margin: 0;
+			padding: .4em 3.5em;
+			border: none;
+			color: #fff;
+			font-family: Arial;
+			text-align: center;
+			text-decoration: none;
+		}
 	</style>
 </head>
 <body>
+
+	<div class="btn-GitHub">
+		<a href="https://github.com/oNora/JS_snippets">Fork me on GitHub</a>
+	</div>
+
 	<label for="tb-first">First: </label>
 	<input type="text" id="tb-first" />
 	<br />
@@ -43,13 +83,13 @@
 			var second = $("#tb-second").val();
 			var oldValue = 0;
 			if (first > second) {
-			 	oldValue = first;
-			 	first = second;
-			 	second = oldValue;
-			 	$('#console').append("before exchange: first=" + second + "; second =" + first + ". After that: first= " + first + "; second = " + second);
+				oldValue = first;
+				first = second;
+				second = oldValue;
+				$('#console').append("before exchange: first=" + second + "; second =" + first + ". After that: first= " + first + "; second = " + second);
 			}
 			else {
-			 	$('#console').append("First is not bigger than second <br />");	
+				$('#console').append("First is not bigger than second <br />");	
 			}
 		}
 	</script>

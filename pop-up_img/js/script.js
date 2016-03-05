@@ -16,8 +16,8 @@ $(document).ready( function() {
 		},100);
 
 		$('#popUp_overlay').each( function() {
-			$(this).css('width', $(document).width() + 'px');
-			$(this).css('height', $(document).height() - 100 + 'px');
+			$(this).css('width', $(document).innerWidth() + 'px');
+			$(this).css('height', $(document).innerHeight() - 100 + 'px');
 
 		});
 			$('body').on('click', '#cancelButton', function() {

@@ -1,6 +1,6 @@
 *{
 	margin:0px;
-	padding: 0px; 
+	padding: 0px;
 }
 body{
 	font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
@@ -8,7 +8,7 @@ body{
 }
 #wrapper{
 	width: 960px;
-	
+
 }
 .tab-strip{
 	width:323px;
@@ -22,7 +22,7 @@ body{
 a {
 	color: #000;
 	text-decoration: none;
-	
+
 }
 li div{
 	display: none;
@@ -45,7 +45,7 @@ li div{
 
 }
 ul.tab-strip >li:hover{
-	
+
 	background: #EEEEEE;
 }
 ul.tab-strip li.current{

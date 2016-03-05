@@ -2,7 +2,7 @@ var tmpExample = {
 	ready : function() {
 		// Find all <input> elements and add a click
 		// event.
-		$("a").click(tmpExample.findElements);
+		$("#tmpRecap a").click(tmpExample.findElements);
 	},
 
 	findElements : function($e)

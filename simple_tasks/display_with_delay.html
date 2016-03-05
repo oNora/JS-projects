@@ -16,9 +16,18 @@
 			background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#66ffffff',GradientType=0 ); /* IE6-9 */
 			}
+
+			/* GitHub btn */
+			.btn-GitHub{position:fixed;top:2.9em;right:-3.7em;display:block;padding:4px 0;background:#ececec;box-shadow:1px 1px 5px 1px #666;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;z-index:999;float:none;height:auto;width:auto;}
+			.btn-GitHub a{display:block;padding:.4em 3.5em;color:#000;font-family:Arial;text-align:center;text-decoration:none;}
 	</style>
 	</head>
 	<body>
+
+		<div class="btn-GitHub">
+			<a href="https://github.com/oNora/JS_snippets">Fork me on GitHub</a>
+		</div>
+
 		<form action="answer1.html" method="post" class="selfsubmitdelay" onsubmit="return false;">
 			<p>
 				<label for="username">Username</label>
@@ -58,14 +67,14 @@
 				var selectedVal = "none";
 				var selected = $("input[type='radio']:checked");
 				if (selected.length > 0) {
-				    selectedVal = selected.val();
+					selectedVal = selected.val();
 				}
 				var valueInputArry = [];
 				valueInputArry.push(inputUsername, inputToken, inputBrand, selectedVal);
 				console.log(valueInputArry);
 
 				setTimeout(function() {
-      				var result = "<div id='result'>";
+					var result = "<div id='result'>";
 					var arrayLength = valueInputArry.length;
 					for (var counter = 0; counter < arrayLength; counter++) {
 						result += '<p>' + valueInputArry[counter] + '</p>';
@@ -75,7 +84,7 @@
 
 					$("body").append(result);
 				}, 5000);
-				
+
 			})
 		});
 	</script>
