@@ -1,5 +1,5 @@
 window.onload = function(){
-	var linkElements = document.getElementsByTagName("a");
+	var linkElements = document.getElementsByClassName("img-link");
 	for (var i = 0; i < linkElements.length; i++) {
 		linkElements[i].onclick = function(e) {
 			window.open(
