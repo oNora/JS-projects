@@ -1,5 +1,7 @@
-JS-projects
+JS projects
 ===========
+This is a collection of JS tasks, that I created just for fun or while trying new things.
+
 
 #### `dynamic-page-vanilla-js`
 
@@ -20,5 +22,9 @@ c) Cross-browser
 - IE8, 9
 - FF
 - Chrome
- 
+
 Demo link: http://onora.github.io/JS_snippets/dynamic-page-vanilla-js/
+
+#### `js-snippets`
+Short tasks that shows power of JavaScript ([more details](https://github.com/oNora/JS-projects/tree/master/js-snippets))
+
