@@ -35,6 +35,9 @@ c) Cross-browser
 
 View [demo](http://onora.github.io/JS-projects/dynamic-page-vanilla-js/)
 
-####3. `js-snippets`
+####3. `form_with_validation`
+Examples of forms with validations and HTML5 FileReader API ([more details](https://github.com/oNora/JS-projects/tree/master/form_with_validation))
+
+####4. `js-snippets`
 Short tasks that shows power of JavaScript ([more details](https://github.com/oNora/JS-projects/tree/master/js-snippets))
 

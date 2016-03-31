@@ -1,0 +1,96 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	padding: 10px;
+}
+/* GitHub btn */
+.btn-GitHub {
+	position: fixed;
+	top: 3.2em;
+	right: -3.7em;
+	display: block;
+	padding: 4px 0;
+	background: #fca000;
+	box-shadow: 1px 1px 5px 1px #666;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.btn-GitHub a{
+	display: block;
+	padding: .4em 3.5em;
+	color:#000;
+	font-family: Arial;
+	text-align: center;
+	text-decoration: none;
+}
+#page-wrapper {
+	display: inline-block;
+	width: 410px;
+	padding: 10px;
+	border-radius: 5px;
+	background: #000;
+	font-size: 17px;
+}
+label{
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+}
+.errorRow{
+	color: #fca000;
+}
+.field{
+	margin-bottom: 18px;
+}
+.field:last-of-type{
+	margin-bottom: 8px;
+}
+input {
+	display: inline-block;
+	width: 380px;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+.errorRow input{
+	background: url('img/cancel-circle.png') no-repeat 98% center #fff;
+}
+.errorRow.age{
+	background: url('img/cancel-circle.png') no-repeat 96% 31px;
+}
+.correctRow input{
+	background: url('img/checkmark-circle.png') no-repeat 98% center #fff;
+}
+.correctRow.age{
+	background: url('img/checkmark-circle.png') no-repeat 96% 31px;
+}
+select {
+	display: inline-block;
+	width: 100px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 20px;
+	outline: none;
+}
+button {
+	background: #fca000;
+	border: 2px solid #fca000;
+	border-style: outset;
+	display: inline-block;
+	width: 404px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+}

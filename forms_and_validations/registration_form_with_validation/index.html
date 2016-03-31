@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration demo</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="../vendors/jquery-2.1.0.min.js"></script>
+	<script src="../vendors/jquery.validate.min.js"></script>
+	<script src="../vendors/additional-methods.min.js"></script>
+	<script src="../vendors/handlebars-v1.3.0.js"></script>
+	<script src="scripts/script.js"></script>
+</head>
+<body>
+
+	<div class="btn-GitHub">
+		<a href="https://github.com/oNora/forms_and_validations">Fork me on GitHub</a>
+	</div>
+
+	<div id="page-wrapper">
+		<form id="ajax-contact" method="post" action="mailer.php">
+			<div class="field">
+				<label for="fname">First name:</label>
+				<input type="text" id="fname" name="fname" >
+			</div>
+
+			<div class="field">
+				<label for="lname">Last name:</label>
+				<input type="text" id="lname" name="lname" >
+			</div>
+
+			<div class="field">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" >
+			</div>
+
+			<div class="field">
+				<label for="userName">User name:</label>
+				<input type="text" id="userName" name="userName" >
+			</div>
+
+			<div class="field age">
+				<label>Your Birthday:</label>
+				<select name="dob_day" id="dob_day" class="required">
+					<option value="">Day</option>
+				</select>
+				<select name="dob_month" id="dob_month" class="required">
+					<option value="">Month</option>
+				</select>
+				<select name="dob_year" id="dob_year" class="required">
+					<option value="">Year</option>
+				</select>
+			</div>
+
+			<div class="field">
+				<label for='password'>Password:</label>
+				<input type="password" name="password" id="password" />
+			</div>
+
+			<div class="field">
+				<label for='password_confirm'>Confirm Password:</label>
+				<input type="password" name="password_confirm" id='password_confirm'/>
+			</div>
+
+			<div class="field">
+				<button type="submit">Register</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
