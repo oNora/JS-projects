@@ -41,3 +41,9 @@ Examples of forms with validations and HTML5 FileReader API ([more details](http
 ####4. `js-snippets`
 Short tasks that shows power of JavaScript ([more details](https://github.com/oNora/JS-projects/tree/master/js-snippets))
 
+####5. `reusableMenu`
+Example for creating elements with different options and those elements can be reusable.
+For testing functionality - mocha with chai.
+View [demo](http://onora.github.io/JS-projects/reusableMenu/)
+
+

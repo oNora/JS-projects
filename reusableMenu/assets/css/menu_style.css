@@ -1,0 +1,162 @@
+/* GitHub btn */
+.btn-GitHub {
+    position: fixed;
+    top: 3.5em;
+    right: -4.2em;
+    display: block;
+    padding: 4px 0;
+    background:  #1abc9c 0 0 repeat;
+    box-shadow: 1px 1px 5px 1px #666;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    z-index: 999;
+}
+.btn-GitHub a{
+    display: block;
+    padding: .4em 3.5em;
+    color:#fff;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gmUI_wrapper {
+    width: 100%;
+    height: 100vh;
+    min-width: 900px;
+    background: url('../image/screen.jpg') no-repeat center center;
+}
+
+.gmUI_menuWrapper form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40vw;
+    height: auto;
+    max-width: 700px;
+    min-width: 497px;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    background-color: rgba(75, 79, 81, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    -webkit-user-select: none;
+}
+.gmUI_buttonsOption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18vw;
+    min-width: 235px;
+    margin-top: -130px;
+    margin-left: -9vw;
+    background-color: rgba(75, 79, 81, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    -webkit-user-select: none;
+}
+.gmUI_buttonsOption button:first-of-type{
+    margin-top: 13%;
+}
+.gmUI_buttonsOption button {
+    min-width: 200px;
+    margin-top: 10px;
+}
+.gmUI_buttonsOption button:last-of-type{
+    margin-bottom:  13%;
+}
+
+.gmUI_wrapperSlider,
+.gmUI_wrapperSelect{
+    display: inline-block;
+    width: 100%;
+}
+.gmUI_wrapperSelect select{
+    width: 20vw;
+}
+.ui-slider{
+    float: left;
+    width: 20vw;
+    margin-top: 15px;
+    margin-left: 6px;
+}
+.gmUI_divColor{
+    display: inline-block;
+    float: left;
+}
+label{
+    color: #fff;
+}
+label.gmUI_sample{
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-width: 135px;
+    color: #fff;
+    text-align: right;
+}
+.share-label {
+    width: 135px;
+}
+span.gmUI_slider{
+    background: #1abc9c;
+    display: inline-block;
+    float: left;
+    width: 7vw;
+    height: 44px;
+    min-width: 85px;
+    margin-left: 2%;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 42px;
+}
+button.btn.btn-inverse {
+    float: left;
+    width: 11vw;
+    min-width: 85px;
+    margin-left: 15%;
+}
+.gmUI_sampleSwitch{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+.gmUI_sampleCustonOption > input[type="number"]{
+    float: left;
+    width: 4vw;
+    min-width: 63px;
+}
+.gmUI_sampleCustonOption,
+.gmUI_wrapperSelect,
+.gmUI_changeOption,
+.gmUI_colorPicker,
+.gmUI_wrapperSlider{
+    width: 100%;
+    height: 12%;
+    float: left;
+    margin-top: 1vh;
+}
+.gmUI_wrapperSelect>div{
+    margin:0;
+}
+.gmUI_colorPicker{
+    color: #fff;
+}
+.gmUI_changeOption{
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.colorpicker{
+    z-index: 99;
+}

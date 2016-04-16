@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Options menu test</title>
+        <link rel="stylesheet" type="text/css" href="node_modules/mocha/mocha.css">
+        <script type="text/javascript" src="../assets/vendors/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../assets/vendors/flat-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="../assets/vendors/flat-ui/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="../assets/vendors/flat-ui/js/jquery.tagsinput.js"></script>
+        <script type="text/javascript" src="../assets/vendors/flat-ui/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../assets/vendors/flat-ui/js/bootstrap-select.js"></script>
+        <script type="text/javascript" src="../assets/vendors/flat-ui/js/bootstrap-switch.js"></script>
+        <script type="text/javascript" src="../assets/vendors/colorpicker/js/colorpicker.js"></script>
+        <script type="text/javascript" src="../assets/vendors/handlebars.js/dist/handlebars.js"></script>
+        <script type="text/javascript" src="../assets/js/reusable-options.js"></script>
+
+    </head>
+    <body>
+
+        <!-- mock html structure of reusable-menu.html -->
+        <div class="gmUI_wrapper" style="display: none">
+            <div class="gmUI_menuWrapper">
+                <div class='gmUI_buttonsOption' id="gmUI_menuOption">
+                    <button type="button" class="btn btn-large btn-primary">Play</button>
+                    <button type="button" class="btn btn-large btn-primary" id="show-options">Options</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mocha"></div>
+
+        <script src="node_modules/mocha/mocha.js"></script>
+        <script src="node_modules/chai/chai.js"></script>
+        <script src="node_modules/chai-jquery/chai-jquery.js"></script>
+        <script src="node_modules/sinon/lib/sinon.js"></script>
+        <script src="node_modules/sinon/lib/sinon/util/core.js"></script>
+        <script src="node_modules/sinon/lib/sinon/assert.js"></script>
+        <script src="node_modules/sinon/lib/sinon/extend.js"></script>
+        <script src="node_modules/sinon/lib/sinon/match.js"></script>
+        <script src="node_modules/sinon/lib/sinon/spy.js"></script>
+        <script src="node_modules/sinon/lib/sinon/call.js"></script>
+        <script src="node_modules/sinon/lib/sinon/behavior.js"></script>
+        <script src="node_modules/sinon/lib/sinon/walk.js"></script>
+        <script src="node_modules/sinon/lib/sinon/stub.js"></script>
+
+        <script>mocha.setup('bdd');</script>
+        <script>expect = chai.expect;</script>
+        <script>should = chai.should;</script>
+
+        <script src="test-reusable-options.js"></script>
+
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>
