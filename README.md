@@ -43,7 +43,9 @@ Short tasks that shows power of JavaScript ([more details](https://github.com/oN
 
 ####5. `reusableMenu`
 Example for creating elements with different options and those elements can be reusable.
-For testing functionality - mocha with chai.
+<br />
+Unit Testing with Mocha and Chai.
+<br />
 View [demo](http://onora.github.io/JS-projects/reusableMenu/)
 
 
