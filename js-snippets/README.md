@@ -1,12 +1,15 @@
 JS-projects/ js-snippets
 ===========
+Basics of JavaScript and Jquery
 
 ####1.	`jQuery_Selecting_Filtering`
 Simple task that demonstrates jQuery’s Selectors API
 <br />Demo link: http://onora.github.io/JS-projects/js-snippets/jQuery_Selecting_Filtering/
+
 ####2.	`pop-up_img`
 Task that demonstrates how to show images in pop-up by using jQuery
 <br />Demo link: http://onora.github.io/JS-projects/js-snippets/pop-up_img/
+
 ####3.	`simple_tasks`
 Short tasks that shows power of JavaScript 
 
