@@ -1,0 +1,608 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Lato', Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+#fp-nav.right {
+    right: 2px;
+}
+
+.gitHubBtn {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    color: #f8f5f5;
+    z-index: 9;
+}
+
+.gitHubBtn:hover,
+.gitHubBtn:active {
+    color: #e0e0e0;
+}
+
+
+/* --- device-frame --- */
+.swiper-button-next,
+.swiper-button-prev {
+    background-size: 40px 57px;
+}
+
+
+.device-frame {
+    z-index: 10;
+
+    .device-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        background-size: contain;
+        pointer-events: none;
+    }
+
+    /* --- slide --- */
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        box-sizing: border-box;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        pointer-events: none;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .swiper-button {
+        padding: 30px 20px;
+        top: 45%;
+
+        &.swiper-button-next {
+            background-image: url("../images/rightArr.png");
+            right: -45px;
+            pointer-events: auto;
+        }
+
+        &.swiper-button-prev {
+            background-image: url("../images/leftArr.png");
+            left: -55px;
+            pointer-events: auto;
+        }
+    }
+
+    &#ipad-frame {
+        .swiper-button-next {
+            right: -50px;
+        }
+
+        .swiper-button-prev {
+            left: -55px;
+        }
+    }
+}
+
+//start - styles for menu img in project-2
+#slider-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: initial;
+    height: 90%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%);
+    }
+}
+
+//end - styles for menu img in project-2
+
+
+.textSection {
+    background: rgba(255, 255, 255, 0.80);
+
+    h1 {
+        font-size: 32px;
+        font-weight: normal;
+        // line-height: 50px;
+        color: #00529B;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 19px;
+        font-weight: normal;
+        // line-height: 42px;
+        color: #212121;
+    }
+
+    h3 {
+        font-size: 19px;
+        font-weight: normal;
+        //line-height: 32px;
+        color: #212121;
+    }
+
+    ul {
+        font-size: 2em;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
+
+        li {
+            margin: 0;
+            // margin-bottom: 1em;
+            padding-left: 1em;
+            position: relative;
+
+            p {
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 24px;
+                color: #212121;
+                margin-bottom: 10px;
+                padding-left: 25px;
+            }
+
+            &:after {
+                content: '';
+                height: .4em;
+                width: .4em;
+                background: #00529b;
+                display: block;
+                position: absolute;
+                transform: rotate(45deg);
+                top: .2em;
+                left: 0;
+                margin-left: 5px;
+            }
+
+            &:last-child {
+                p {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        &.dashed {
+
+            li {
+                margin-bottom: 10px;
+                margin-left: 55px;
+
+                &:after {
+                    top: 0.23em;
+                    width: .25em;
+                    height: .25em;
+                    margin-left: 12px;
+                    border-radius: 50%;
+                    transform: none;
+                }
+
+                p {
+                    padding-left: 5px;
+                }
+
+                &:first-child {
+                    p {
+                        margin-top: 0px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+.main-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: stretch;
+    height: 100%;
+
+    .main-flex-item {
+        width: 43%;
+        align-self: stretch;
+        padding: 0px 50px;
+        margin-right: 2%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .flex-fix {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        //align-items: flex-start;
+    }
+}
+
+
+#section0 {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+// logo grid on section2
+#section2 {
+    .flex-container {
+        list-style: none;
+        padding: 0 10px;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-item {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 13%;
+        max-width: 130px;
+        margin: 10px;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .logo-grid {
+        padding: 0px;
+        flex: 1 0;
+        align-self: center;
+    }
+}
+
+#section3 {
+    em {
+        font-style: initial;
+        color: #ed3d12;
+    }
+
+    .green {
+        font-style: initial;
+        color: #4CAF50;
+    }
+}
+
+
+
+//position landscape on first page
+.landscape-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+
+    img {
+        display: block;
+    }
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+//hide bullet menu on load
+#fp-nav {
+    display: none;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #ffffff;
+}
+
+//Slider arrows
+.fp-controlArrow {
+    display: none;
+    background-position: 15px center;
+    background-size: 26px 49px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    width: 60px;
+    height: 110px;
+    margin-top: -55px;
+    cursor: pointer;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    border: none;
+}
+
+
+/* Backgrounds will cover all the section
+    * --------------------------------------- */
+
+.section:not(#section0) {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#section0 {
+    background: rgba(9, 83, 139, 1);
+    background: -moz-linear-gradient(top, rgba(9, 83, 139, 1) 0%, rgba(9, 83, 139, 1) 49%, rgba(5, 108, 171, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(9, 83, 139, 1)), color-stop(49%, rgba(9, 83, 139, 1)), color-stop(100%, rgba(5, 108, 171, 1)));
+    background: -webkit-linear-gradient(top, rgba(9, 83, 139, 1) 0%, rgba(9, 83, 139, 1) 49%, rgba(5, 108, 171, 1) 100%);
+    background: -o-linear-gradient(top, rgba(9, 83, 139, 1) 0%, rgba(9, 83, 139, 1) 49%, rgba(5, 108, 171, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(9, 83, 139, 1) 0%, rgba(9, 83, 139, 1) 49%, rgba(5, 108, 171, 1) 100%);
+    background: linear-gradient(to bottom, rgba(9, 83, 139, 1) 0%, rgba(9, 83, 139, 1) 49%, rgba(5, 108, 171, 1) 100%);
+}
+
+
+/* Defining each sectino background and styles
+    * --------------------------------------- */
+
+//page 2 - Our approach
+#section2 {
+    background-image: url("../images/backgrounds/section2.jpg");
+}
+
+//page 3 - Solutions we have developed
+#section3 {
+    background-image: url("../images/backgrounds/section3.jpg");
+}
+
+//android project - project-1
+#section4 {
+    background-image: url("../images/backgrounds/section9.jpg");
+}
+
+// iPhone Project - project-2
+#section5 {
+    background-image: url("../images/backgrounds/section5.jpg");
+}
+
+// iPhone Project - project-3
+#section6 {
+    background-image: url("../images/backgrounds/section7.jpg");
+}
+
+// iPhone Project - project 4
+#section7 {
+    background-image: url("../images/backgrounds/section8.jpg");
+}
+
+// iPhone Project - project-5
+#section8 {
+    background-image: url("../images/backgrounds/section6.jpg");
+}
+
+// iPad Project - project 6
+#section9 {
+    background-image: url("../images/backgrounds/section13.jpg");
+}
+
+
+/* Animation hotspot circle */
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    45% {
+        -webkit-transform: scale(1.75);
+        transform: scale(1.75);
+        opacity: 0;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    45% {
+        -webkit-transform: scale(1.75);
+        transform: scale(1.75);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes stop-pulsate {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes stop-pulsate {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+/* Button */
+
+.btn-pulse {
+    position: absolute;
+    pointer-events: auto;
+    display: none;
+}
+
+.btn-pulse .circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -15px auto auto -15px;
+    background: rgb(47, 204, 28);
+    border-radius: 50%;
+    opacity: 0.5;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: opacity .2s ease-in, -webkit-transform .1s ease-out;
+    transition: opacity .2s ease-in, -webkit-transform .1s ease-out;
+    transition: opacity .2s ease-in, transform .1s ease-out;
+    transition: opacity .2s ease-in, transform .1s ease-out, -webkit-transform .1s ease-out;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+    overflow: hidden;
+}
+
+.btn-pulse .circle:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-pulse .circle:active {
+    -webkit-transform: scale(0.875);
+    transform: scale(0.875);
+}
+
+.btn-pulse .ring {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2em;
+    height: 2em;
+    margin: -1em auto auto -1em;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border-radius: 50%;
+    border: 1px solid #7097bf;
+    opacity: 0;
+    -webkit-animation: pulsate 3s ease-out infinite;
+    animation: pulsate 3s ease-out infinite;
+}
+
+.btn-pulse:hover .ring {
+    -webkit-animation: none;
+    animation: none;
+}
+
+.btn-pulse:active .ring {
+    -webkit-animation: stop-pulsate 0.3s;
+    animation: stop-pulsate 0.3s;
+}

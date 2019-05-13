@@ -1,0 +1,23 @@
+#ipad-frame {
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    width: 600px;
+    height: 833px;
+    background-repeat: no-repeat;
+    padding: 64px 41px 74px 39px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    .tablet-screen {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background: #343740;
+    }
+
+
+    .device-overlay{
+        background-image: url("../images/iPad.png");
+    }
+}
