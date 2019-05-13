@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="title" content="Demo portfolio page for a company or a project">
+    <title>Demo portfolio page for a company or a project</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="css/styles-5f5a26905c.min.css">
+
+</head>
+
+<body>
+
+    <a href="https://github.com/oNora/JS-projects/portfolio-page/" target="_blank" title="Visit my GitHub"
+        class='gitHubBtn'>
+        <svg width="80px" height="80px" viewBox="0 0 250 250">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" fill='#eb8c00'></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+
+    <div id="ip-container" class="ip-container">
+        <!-- initial header -->
+        <header class="ip-header">
+            <h1 class="ip-logo">
+
+                <svg>
+                    <defs>
+                        <path id="textpath" fill="none" stroke="#000000"
+                            d="M0.057,0.024c0,0,10.99,51.603,102.248,51.603c91.259,0,136.172,53.992,136.172,53.992" />
+                    </defs>
+                    <use xlink:href="#textpath" />
+                    <text x="10" y="50">
+                        <textPath font-size="35px" font-weight="bold" xlink:href="#textpath">Company Logo</textPath>
+                    </text>
+                </svg>
+
+            </h1>
+            <div class="ip-loader">
+                <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                    <path class="ip-loader-circlebg"
+                        d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                    <path id="ip-loader-circle" class="ip-loader-circle"
+                        d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                </svg>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <div class="ip-main">
+            <div id="fullpage">
+                <!-- page 1 -->
+                <div class="section active" id="section0">
+                    <div class="deco-stack">
+                        <img class="deco-stack__img " src="images/video/lamb.png" alt="Picture 1" />
+                    </div>
+                    <div class="video-wrap">
+                        <div class="video-inner">
+                            <div class="loader"></div>
+                            <video class="video-player" src="" poster="images/video/poster.png" preload="auto">
+                                <source src="images/video/meet-the-team.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+                                <!-- <source src="images/video/meet-the-team.ogg" type='video/ogv; codecs="theora, vorbis"'> -->
+                                <source src="images/video/meet-the-team.mp4"
+                                    type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                                <p>Sorry, but your browser does not support this video format.</p>
+                            </video>
+                            <button class="action action--close"><i class="fa fa-close"></i><span
+                                    class="action__label action__label--hidden">Close preview</span></button>
+                        </div> <!-- /video-inner -->
+                    </div><!-- /video-wrap-->
+                    <div class="content">
+                        <button class="action action--hidden action--play">
+                            <i class="fa fa-play"></i><span class="action__label">Meet the team video</span>
+                        </button>
+                    </div>
+                    <div class="landscape-bg">
+                        <img src="./images/landscape.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- page 2 -->
+                <div class="section" id="section2">
+
+                    <div class="main-flex-container">
+
+                        <div class="main-flex-item logo-grid">
+                            <ul class="flex-container ">
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png"
+                                        alt="partner logo-club">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                <li class="flex-item"><img src="./images/branding/partner-logo.png" alt="partner logo">
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Our approach</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit</h2>
+                            <ul class="mainList">
+                                <li>
+                                    <p> Fusce efficitur, urna iaculis rutrum finibus, odio erat pellentesque mauris,</p>
+                                </li>
+                                <li>
+                                    <p> Fusce efficitur, urna iaculis rutrum finibus, odio erat pellentesque.</p>
+                                </li>
+                                <li>
+                                    <p> Fusce efficitur, urna iaculis rutrum finibus</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- page 3 - android project 1-->
+                <div class="section" id="section3">
+
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Solutions</h1>
+                            <h2> Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi:</h2>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        <span>View<em>maker</em></span></br>
+                                        Donec ut sagittis tortor, sit amet ultricies felis</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Play<em class="green">maker</em></span></br>
+                                        Donec ut sagittis tortor, sit amet ultricies felis</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>App Frameworks</span></br>
+                                        Donec ut sagittis tortor, sit amet ultricies felis</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- page 4 - iPhone project 1-->
+                <div class="section" id="section4">
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Project one</h1>
+                            <h2>
+                                Nunc sed lectus nisl. Donec dapibus porttitor turpis.
+                            </h2>
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum, eros sed maximus
+                                pretium, diam nibh hendrerit purus, id convallis erat sem id neque. :
+                            </h3>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="dashed">
+                                <li>
+                                    <p>Nam in quam elit</p>
+                                </li>
+                                <li>
+                                    <p>Nam in quam elit</p>
+                                </li>
+                                <li>
+                                    <p>Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- page 5 - iPhone project 2-->
+                <div class="section" id="section5">
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Project two</h1>
+                            <h2>
+                                Nunc sed lectus nisl. Donec dapibus porttitor turpis.
+                            </h2>
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum, eros sed maximus
+                                pretium, diam nibh hendrerit purus, id convallis erat sem id neque. :
+                            </h3>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="dashed">
+                                <li>
+                                    <p>Nam in quam elit</p>
+                                </li>
+                                <li>
+                                    <p>Nam in quam elit</p>
+                                </li>
+                                <li>
+                                    <p>Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- page 6 - iPhone project 3-->
+                <div class="section" id="section6">
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Project three</h1>
+                            <h2>
+                                Nunc sed lectus nisl. Donec dapibus porttitor turpis.
+                            </h2>
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum, eros sed maximus
+                                pretium, diam nibh hendrerit purus, id convallis erat sem id neque. :
+                            </h3>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- page 7 - iPhone project 4-->
+                <div class="section" id="section7">
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Project four</h1>
+                            <h2>
+                                Nunc sed lectus nisl. Donec dapibus porttitor turpis.
+                            </h2>
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum, eros sed maximus
+                                pretium, diam nibh hendrerit purus, id convallis erat sem id neque. :
+                            </h3>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- page 8 - iPhone project 5-->
+                <div class="section" id="section8">
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Project five</h1>
+                            <h2>
+                                Nunc sed lectus nisl. Donec dapibus porttitor turpis.
+                            </h2>
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum, eros sed maximus
+                                pretium, diam nibh hendrerit purus, id convallis erat sem id neque. :
+                            </h3>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="dashed">
+                                <li>
+                                    <p>Nam in quam elit</p>
+                                </li>
+                                <li>
+                                    <p>Nam in quam elit</p>
+                                </li>
+                                <li>
+                                    <p>Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- page 9 - iPad project 1-->
+                <div class="section" id="section9">
+                    <div class="main-flex-container">
+                        <div class="main-flex-item textSection flex-fix">
+                            <h1>Project six</h1>
+                            <h2>
+                                Nunc sed lectus nisl. Donec dapibus porttitor turpis.
+                            </h2>
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum, eros sed maximus
+                                pretium, diam nibh hendrerit purus, id convallis erat sem id neque. :
+                            </h3>
+                            <ul class="mainList">
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Nullam in feugiat massa. Fusce in ex quis erat semper suscipit ut sit amet mi.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- android frame -->
+        <div id="android-frame" class="device-frame phone-frame">
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+
+            <div class="device-overlay"></div>
+            <div class="android-screen">
+                <div class="swiper-container android-vertical slide-show-devices" id='androidVertical'>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="swiper-container slide-show-projects" id='section4_slider'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/slider/project-1/LocalSay1.jpg" alt="project-1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-1/LocalSay2.jpg' alt='project-1' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /android frame -->
+
+        <!-- iphone frame -->
+        <div id="iphone-frame" class="device-frame phone-frame">
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+
+            <div class="device-overlay"></div>
+            <div class="phone-screen">
+                <div class="swiper-container iphone-vertical slide-show-devices" id='iphoneVertical'>
+                    <div class="swiper-wrapper">
+
+
+                        <div class="swiper-slide">
+                            <div class="swiper-container slide-show-projects" id='section5_slider'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="btn-pulse slide1" style="top: 110px; left: 70px; display:block"
+                                            data-target='1'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <div class="btn-pulse slide1" style="top: 31px; left: 260px; display:block"
+                                            data-target='noTarget'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <img src="images/slider/project-2/JockeyClub4.jpg" alt="project-2">
+                                        <img id="slider-img" class="slide-out"
+                                            src="images/slider/project-2/JockeyClub-menu.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="btn-pulse slide2" style="top: 30px; left: 30px" data-target='0'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <div class="btn-pulse slide2" style="top: 148px; left: 171px" data-target='2'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <div class="btn-pulse slide2" style="top: 277px; left: 265px" data-target='4'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <div class="btn-pulse slide2" style="top: 343px; left:  265px" data-target='5'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <img class='img-lazy' src='images/px-img.png' data-puls="slide2"
+                                            data-imgsrc='images/slider/project-2/JockeyClub-racecourse.jpg'
+                                            alt='project-2' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="btn-pulse slide2" style="top: 30px; left: 30px" data-target='1'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <div class="btn-pulse slide2" style="bottom: 19px; right: 48px" data-target='3'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <img class='img-lazy' src='images/px-img.png' data-puls="slide2"
+                                            data-imgsrc='images/slider/project-2/JockeyClub2.jpg' alt='project-2' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="btn-pulse slide2" style="top: 30px; left: 30px" data-target='1'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <img class='img-lazy' src='images/px-img.png' data-puls="slide2"
+                                            data-imgsrc='images/slider/project-2/JockeyClub2-1.jpg' alt='project-2' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="btn-pulse slide2" style="top: 30px; left: 30px" data-target='1'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <img class='img-lazy' src='images/px-img.png' data-puls="slide2"
+                                            data-imgsrc='images/slider/project-2/JockeyClub-Information.jpg'
+                                            alt='project-2' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="btn-pulse slide2" style="top: 30px; left: 30px" data-target='1'>
+                                            <div class="ring"></div>
+                                            <div class="circle">+</div>
+                                        </div>
+                                        <img class='img-lazy' src='images/px-img.png' data-puls="slide2"
+                                            data-imgsrc='images/slider/project-2/JockeyClub3.jpg' alt='project-2' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-container slide-show-projects" id='section6_slider'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/slider/project-3/CapitaAR1.jpg" alt="project-3">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-3/CapitaAR2.jpg' alt='project-3' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-3/CapitaAR4.jpg' alt='project-3' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-3/CapitaAR5.jpg' alt='project-3' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-3/CapitaAR6.jpg' alt='project-3' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-container slide-show-projects" id='section7_slider'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/slider/project-4/VirginVOOM2.jpg" alt="project-4">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-4/VirginVOOM1.jpg' alt='project-4' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-container slide-show-projects" id='section8_slider'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/slider/project-5/StepFinder1.jpg" alt="project-5">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-5/StepFinder2.jpg' alt='project-5' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-5/StepFinder3.jpg' alt='project-5' />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='img-lazy' src='images/px-img.png'
+                                            data-imgsrc='images/slider/project-5/StepFinder4.jpg' alt='project-5' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /iphone frame -->
+
+        <!-- ipad frame -->
+        <div id="ipad-frame" class="device-frame">
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+
+
+            <div class="device-overlay"></div>
+            <div class="tablet-screen">
+                <div class="swiper-container ipad-vertical slide-show-devices" id="ipadVertical">
+                    <div class="swiper-slide">
+                        <div class="swiper-container slide-show-projects" id='section9_slider'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class='img-lazy' src='iproject-6.gif'
+                                        data-imgsrc='images/slider/project-6/project-6.gif' alt='p6' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /ipad frame -->
+
+    <script src="js/main-358571c4fb.min.js"></script>
+</body>
+
+</html>
