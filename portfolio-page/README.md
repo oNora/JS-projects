@@ -1,5 +1,5 @@
 # Demo portfolio page for a company or a project
-Demo link [here](https://github.com/oNora/JS-projects/tree/master/portfolio-page/dist)
+Demo link [here](http://onora.github.io/JS-projects/portfolio-page/dist/)
 
 
 Quick start
