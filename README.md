@@ -51,8 +51,8 @@ Simple gulp configuration with basic task for developing web app.
 Basics of JavaScript and Jquery ([more details](https://github.com/oNora/JS-projects/tree/master/js-snippets))
 
 #### 8. `portfolio-page`
-Demo portfolio page for a company or a project
-Demo link [here](https://github.com/oNora/JS-projects/tree/master/portfolio-page/dist)
+Demo portfolio page for a company or a project <br >
+Demo link [here](http://onora.github.io/JS-projects/portfolio-page/dist/)
 
 #### 9. `reusableMenu`
 Example for creating elements with different options and those elements can be reusable.
